@@ -4,20 +4,19 @@
 }
 
 body {
-    /* Um tom off-white/creme bem suave que reduz o cansaço visual em telas */
+   
     background-color: #f8f9fa; 
     font-size: 16px;
-    /* Azul escuro quase preto, que oferece excelente contraste e é menos agressivo que o preto puro */
     color: #1a202c; 
-    font-family: sans-serif; /* Adicionado para melhorar a legibilidade */
+    font-family: sans-serif; 
     margin: 0;
 }
 
 header {
-    /* Um azul suave e profissional (passa nos testes de contraste com texto branco) */
+  
     background-color: #1e3a8a; 
-    min-height: 4em; /* Alterado para min-height para evitar quebra de layout se o texto aumentar */
-    color: #ffffff; /* Branco puro para o máximo de contraste sobre o fundo azul escuro */
+    min-height: 4em; 
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,4 +26,12 @@ header h1 {
     margin: 0;
     font-size: 1.8em;
     text-align: center;
+}
+img{
+    width: 50%;
+    border-radius: 18px;
+}
+
+main{
+    background-color: #ffffffc5;
 }
