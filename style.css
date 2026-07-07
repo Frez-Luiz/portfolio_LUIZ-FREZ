@@ -46,8 +46,8 @@ header h1 {
 img {
     /* Largura menor e controlada para computadores */
     width: 100%;
-    max-width: 400px; 
-    height: 450px; 
+    max-width: 600px; 
+    height: 550px; 
     object-fit: cover; 
     border-radius: 16px;
     display: block;
