@@ -1,14 +1,9 @@
-
-*{
-
-}
 body {
     background-color: #f8f9fa; 
     font-size: 16px;
     color: #1a202c; 
     font-family: sans-serif; 
     margin: 0;
-    /* Justifica todo o texto padrão do site */
     text-align: justify; 
 }
 
@@ -24,36 +19,41 @@ header {
 header h1 {
     margin: 0;
     font-size: 1.8em;
-    /* Mantém o título centralizado (geralmente h1 não fica bom justificado) */
-    text-align: center; 
+    text-align: center;
 }
 
 img {
-    /* Padrão para computadores/telas grandes */
-    width: 50%;
-    max-width: 100%; /* Impede que a imagem ultrapasse a tela */
-    height: auto; /* Mantém a proporção da imagem sem distorcer */
+    /* Diminuí a largura de 50% para 35% no computador para ficar menor */
+    width: 35%; 
+    
+    /* Limita a altura para a imagem não ficar muito comprida */
+    height: 250px; 
+    
+    /* Recorta a imagem proporcionalmente para não distorcer */
+    object-fit: cover; 
+    
     border-radius: 18px;
     display: block;
-    margin: 20px auto; /* Centraliza a imagem na página */
+    margin: 20px auto; 
 }
 
-/* --- REGRAS PARA CELULAR (Telas de até 768px de largura) --- */
+/* --- REGRAS PARA CELULAR --- */
 @media (max-width: 768px) {
     body {
-        /* Opcional: Adiciona uma leve margem nas laterais no celular 
-           para o texto justificado não colar na borda da tela */
         padding: 0 15px; 
     }
     
     header {
-        /* Remove o padding do body apenas para o header continuar colado no topo */
         margin: 0 -15px; 
         padding: 10px;
     }
 
     img {
-        /* No celular, a imagem cresce para 90% da tela para ficar legível e normal */
-        width: 90%; 
+        /* No celular ela ganha um pouco mais de largura para não sumir */
+        width: 70px; /* Ou use 70% se preferir porcentagem */
+        width: 70%; 
+        
+        /* Reduz a altura no celular para acompanhar o tamanho da tela */
+        height: 180px; 
     }
 }
