@@ -76,3 +76,35 @@ img:hover {
         height: 200px; 
     }
 }
+
+/* Adicione isso ao seu arquivo style.css para controlar a disposição do conteúdo */
+
+.perfil-container {
+    display: flex;
+    flex-direction: column; /* Deixa os blocos um abaixo do outro de forma limpa */
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.texto-perfil {
+    width: 100%;
+    /* Alinha as listas (ul) à esquerda para melhor legibilidade, 
+       mas mantém o contexto centralizado no layout */
+    text-align: left; 
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.texto-perfil ul {
+    padding-left: 20px; /* Garante espaço para as bolinhas da lista */
+}
+
+footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #e2e8f0; /* Linha divisória sutil e moderna */
+    font-size: 0.9em;
+    color: #4a5568; /* Tom cinza escuro acessível para o rodapé */
+}
