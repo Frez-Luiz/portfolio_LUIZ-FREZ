@@ -2,20 +2,15 @@ body {
     background-color: #f8f9fa; 
     font-size: 16px;
     color: #1a202c; 
-    /* Fonte moderna e limpa, padrão de sistemas operacionais atuais */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
     margin: 0;
     padding: 0;
-    
-    /* Ativa o Flexbox para centralizar todo o conteúdo da página */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; 
 }
 
-/* Container opcional para o seu conteúdo (parágrafos, textos etc.) 
-   Evita que o texto encoste nas bordas em telas grandes */
 main, .conteudo {
     width: 100%;
     max-width: 800px;
@@ -27,11 +22,10 @@ header {
     background-color: #1e3a8a; 
     min-height: 5em; 
     color: #ffffff;
-    width: 100%; /* Garante que o header ocupe toda a largura */
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Sombra leve para dar profundidade e modernidade */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
     margin-bottom: 30px;
 }
@@ -40,11 +34,10 @@ header h1 {
     margin: 0;
     font-size: 2em;
     font-weight: 700;
-    letter-spacing: -0.5px; /* Deixa o título com aspecto mais profissional */
+    letter-spacing: -0.5px; 
 }
 
 img {
-    /* Largura menor e controlada para computadores */
     width: 100%;
     max-width: 600px; 
     height: 550px; 
@@ -52,36 +45,29 @@ img {
     border-radius: 16px;
     display: block;
     margin: 30px auto; 
-    
-    /* Sombra suave e moderna na imagem */
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    /* Transição para caso você queira colocar um efeito de passar o mouse no futuro */
     transition: transform 0.3s ease;
 }
 
-/* Efeito moderno ao passar o mouse na imagem */
 img:hover {
     transform: scale(1.02);
 }
 
-/* --- REGRAS PARA CELULAR (Telas de até 768px de largura) --- */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.6em;
     }
 
     img {
-        /* No celular, ela se adapta dinamicamente mantendo uma boa proporção */
         width: 85%; 
         height: 200px; 
     }
 }
 
-/* Adicione isso ao seu arquivo style.css para controlar a disposição do conteúdo */
 
 .perfil-container {
     display: flex;
-    flex-direction: column; /* Deixa os blocos um abaixo do outro de forma limpa */
+    flex-direction: column; 
     align-items: center;
     gap: 20px;
     width: 100%;
@@ -89,22 +75,20 @@ img:hover {
 
 .texto-perfil {
     width: 100%;
-    /* Alinha as listas (ul) à esquerda para melhor legibilidade, 
-       mas mantém o contexto centralizado no layout */
     text-align: left; 
     max-width: 600px;
     margin: 0 auto;
 }
 
 .texto-perfil ul {
-    padding-left: 20px; /* Garante espaço para as bolinhas da lista */
+    padding-left: 20px; 
 }
 
 footer {
     width: 100%;
     margin-top: 40px;
     padding: 20px 0;
-    border-top: 1px solid #e2e8f0; /* Linha divisória sutil e moderna */
+    border-top: 1px solid #e2e8f0; 
     font-size: 0.9em;
-    color: #4a5568; /* Tom cinza escuro acessível para o rodapé */
+    color: #4a5568; 
 }
