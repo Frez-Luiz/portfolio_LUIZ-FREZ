@@ -30,7 +30,46 @@ header h1 {
     width: 100%;
 }
 
+main{
+    flex: 1;
+}
 
+h2, h3{
+    padding: 10px;
+}
+
+
+
+section{
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+section > div{
+    flex: 1;
+    margin: 2%;
+}
+
+
+img{
+    border-radius: 18px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+li a{
+    color: white;
+    text-decoration: none;
+        text-align: center;
+}
+
+a :hover{
+    color: yellow;
+}
 
 
 header {
@@ -44,14 +83,3 @@ header {
 }
 
 
-section{
-    margin: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-img{
-    border-radius: 18px;
-    max-width: 100%;
-    height: auto;
-}
