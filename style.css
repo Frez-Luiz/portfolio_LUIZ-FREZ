@@ -21,9 +21,15 @@ body {
     margin: 0;
 }
 
-strong{
-    color: #22D4FD;
+
+header h1 {
+    padding: 1em;
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+    width: 100%;
 }
+
 
 
 
@@ -37,11 +43,7 @@ header {
     justify-content: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.8em;
-    text-align: center;
-}
+
 section{
     margin: 10%;
     display: flex;
